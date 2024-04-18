@@ -1,0 +1,668 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*------------Page 1------------*/
+
+.page1{
+    background-color: #121212;
+    height: 135vh;
+    padding: 3vw 3vw;
+}
+
+.page1 h1{
+    font-size: 11vw;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.page1 .line{
+    background: linear-gradient(to right, #135d66, #77b0aa, #e3fef7);
+    height: 0.2vw;
+    width: 100%;
+    margin-top: 1vw;
+    border-radius: 50px;
+}
+
+.page1 .about-container{
+    height: 55vh;
+    width: 90vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    text-align: left;
+}
+
+.page1 .about-container img{
+    height: 55vh;
+    width: 20vw;
+    margin-left: 1vw;
+    object-fit: cover;
+    box-shadow: 0.5px 0.5px 10px black;
+}
+
+.about-me p{
+    line-height: 2.6vw;
+    font-size: 1.3vw;
+    font-weight: lighter;
+}
+
+.about-me h2{
+    color: transparent;
+    background-image: linear-gradient(to right, #135d66, #77b0aa, #e3fef7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 1vw;
+    font-size: xx-large;
+}
+
+.scroller{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    margin-top: 3vw;
+}
+
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* .scroller2{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} */
+
+.scroller h4{
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    -webkit-text-stroke: 1.5px red;
+    color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.scroller h4:hover{
+    color: red;
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/*------------Page 2------------*/
+
+.page2{
+    background-color: #c9c9c9;
+    height: 370vh;
+    padding: 3vw 3vw;
+}
+
+.page2 h1{
+    color: black;
+    font-size: 11vw;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.page2 .certifications{
+    color: black;
+    font-size: 11vw;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 3vw;
+}
+
+.page2 .line2{
+    background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+    height: 0.2vw;
+    width: 100%;
+    margin-top: 1vw;
+    border-radius: 50px;
+}
+
+.page2 .line3{
+    background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+    height: 0.2vw;
+    width: 100%;
+    margin-top: 1vw;
+    border-radius: 50px;
+}
+
+.page2 .pdf a{
+    font-weight: bold;
+    height: 2vw;
+    border-bottom: 2px solid black;
+}
+
+.page2 .line4{
+    background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+    height: 0.2vw;
+    width: 100%;
+    margin-top: 1vw;
+    border-radius: 50px;
+}
+
+.page2 .projects{
+    margin-top: -4vw;
+}
+
+.page2 h2{
+    color: transparent;
+    background-image: linear-gradient(to right, #135d66, #77b0aa, #e3fef7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    margin-top: 1vw;
+    font-size: xx-large;
+}
+
+.page2 .lang, .tech{
+    height: 20vh;
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw 2vw;
+}
+
+.page2 .lang img, .tech img{
+    height: 70%;
+    margin-top: 1vw;
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.page2 .lang img:hover, .page2 .tech img:hover {
+    transform: scale(1.1);
+    box-shadow: 0.5px 0.5px 10px black;
+}
+
+.page2 .pdf{
+    height: 30vh;
+    width: 90vw;
+    margin: 2vw 1vw;
+}
+
+.page2 .pdf a{
+    color: black;
+    display: flex;
+    margin-bottom: 1vw;
+    text-decoration: none;
+}
+
+.page2 .project{
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3vw 0;
+}
+
+.page2 .pr1{
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2 .project .pr1 video{
+    height: 100%;
+    width: 100%;
+}
+
+.pr1 h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #135d66;
+    border-radius: 8px;
+    color: white;
+    height: 17%;
+    width: 17%;
+    z-index: 10;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pr1 h4:hover{
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+.page2 .line5{
+    background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+    height: 0.2vw;
+    width: 100%;
+    margin-top: 1vw;
+    border-radius: 50px;
+}
+
+.page2 .checkout{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+}
+
+.page2 .checkout2{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+}
+
+.page2 .checkout2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.page2 button{
+    color: black;
+    padding: 1vw 6vw;
+    border-radius: 50px;
+    border: none;
+    background-color: #66edf7;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 2px solid black;
+}
+
+.page2 .button2{
+    color: white;
+    padding: 1vw 6vw;
+    border-radius: 50px;
+    border: none;
+    background-color: #fcaa58;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 2px solid black;
+}
+
+.page2 button:hover{
+    transform: scale(1.1);
+    box-shadow: 0.5px 0.5px 10px black;
+}
+
+.page2 .checkout i{
+    color: black;
+    font-size: 2vw;
+    position: absolute;
+    left: 5vw;
+    z-index: 9;
+}
+
+/*------------Page 3------------*/
+
+.page3{
+    height: 40vh;
+    background-color: #121212;
+    padding: 3vw 0;
+}
+
+.page3 h2{
+    text-transform: uppercase;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.page3 .line6{
+    background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+    height: 0.2vw;
+    width: 80%;
+    margin: 1vw 8vw;
+    border-radius: 50px;
+}
+
+.page3 .social{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+    margin-top: 4vw;
+}
+
+/*------------Media Queries------------*/
+
+@media  (max-width:700px){
+    .page1{
+        background-color: #121212;
+        height: 98vh;
+        padding: 7vw 7vw;
+    }
+    
+    .page1 h1{
+        font-size: 11vw;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .page1 .line{
+        background: linear-gradient(to right, #135d66, #77b0aa, #e3fef7);
+        height: 0.2vw;
+        width: 97%;
+        margin-top: 3vw;
+        border-radius: 50px;
+    }
+
+    .page1 .about-container{
+        height: 70vh;
+        width: 70vw;
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .page1 .about-container img{
+        height: 80vh;
+        width: 70vw;
+        margin-left: 15vw;
+        object-fit: cover;
+        box-shadow: 0.5px 0.5px 10px black;
+    }
+    
+    .about-me p{
+        line-height: 2.9vw;
+        font-size: 1.5vw;
+        font-weight: 100;
+        text-align: center;
+        margin-left: 12vw;
+        margin-top: 4vw;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    .about-me h2{
+        color: transparent;
+        background-image: linear-gradient(to right, #135d66, #77b0aa, #e3fef7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        margin-bottom: 1vw;
+        margin-top: 5vw;
+        font-size: 7vw;
+        text-align: center;
+        margin-left: 12vw;
+    }
+
+    .scroller{
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: relative;
+        z-index: 10;
+        margin-top: 7vw;
+    }
+
+    .scroller h4{
+        display: inline-block;
+        font-size: 3vw;
+        font-weight: 800;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        -webkit-text-stroke: 1px red;
+        color: transparent;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .page2{
+        background-color: #c9c9c9;
+        /* height: 230vh; */
+        height: auto;
+        padding: 7vw 7vw;
+    }
+
+    .page2 .design{
+        font-size: 10vw;
+        margin-top: 4vw;
+    }
+
+    .page2 h1{
+        color: black;
+        font-size: 11vw;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    
+    .page2 .line2{
+        background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+        height: 0.2vw;
+        width: 85%;
+        margin-top: 1vw;
+        border-radius: 50px;
+    }
+    
+    .page2 h2{
+        color: transparent;
+        background-image: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+        margin-top: 5vw;
+        font-size: 6vw;
+    }
+    
+    .page2 .lang, .tech{
+        height: 20vh;
+        width: 98%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 3vw 4vw;
+    }
+    
+    .page2 .lang img, .tech img{
+        height: 40%;
+        margin-top: 3vw;
+        border-radius: 10px;
+        display: inline-block;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .page2 .newh2{
+        margin-top: 6vw;
+    }
+
+    .page2 .designh2{
+        margin-top: 5vw;
+    }
+
+    .page2 .certifications{
+        margin-top: -8vw;
+    }
+
+    .page2 .projects{
+        margin-top: 20vw;
+    }
+
+    .page2 .pdf{
+        height: 8vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .page2 .pdf a{
+        font-weight: 100;
+        margin-bottom: 5vw;
+        height: 1vw;
+        border: none;
+        line-height: 5vh;
+    }
+
+    .page2 .line4{
+        background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+        height: 0.2vw;
+        width: 85%;
+        margin-top: 1vw;
+        margin-bottom: 3vw;
+        border-radius: 50px;
+    }
+
+    .page2 .project{
+        height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3vw 0;
+    }
+
+    .page2 .pr1{
+        height: 20%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pr1 h4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #135d66;
+        border-radius: 8px;
+        color: white;
+        height: 12%;
+        width: 58%;
+        z-index: 10;
+        margin-top: -5vw;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .pr1 h4:hover{
+        background-color: transparent;
+        color: transparent;
+    }
+    
+    .page2 .project video{
+        height: 5vw;
+        margin-bottom: 10vw;
+    }
+
+    .page2 .checkout{
+        height: 10vh;
+        display: flex;
+        flex-direction: flex-start;
+        gap: 2vw;
+        margin-top: 17vw;
+    }
+
+    .page2 .checkout2{
+        height: 10vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2vw;
+        margin-top: 4vw;
+    }
+
+    .page2 button{
+        color: black;
+        padding: 2vw 10vw;
+        border-radius: 50px;
+        border: none;
+        background-color: #66edf7;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 3vw;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        margin-top: 10vw;
+        border: 2px solid black;
+    }
+
+    .page2 .button2{
+        color: white;
+        padding: 1vw 6vw;
+        border-radius: 50px;
+        border: none;
+        background-color: #fcaa58;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        border: 2px solid black;
+        margin-top: -7vw;
+    }
+
+    .page2 .checkout i{
+        color: black;
+        font-size: 5vw;
+        margin-top: 10vw;
+        position: absolute;
+        left: 9vw;
+    }
+
+    .page3{
+        height: 20vh;
+        background-color: #121212;
+        padding: 5vw 0;
+    }
+    
+    .page3 h2{
+        text-transform: uppercase;
+        font-size: 6vw;
+        text-align: center;
+    }
+    
+    .page3 .line5{
+        background: linear-gradient(to right, #135d66, #77b0aa, #003c43);
+        height: 0.2vw;
+        width: 80%;
+        margin: 3vw 8vw;
+        border-radius: 50px;
+    }
+
+    .page3 .social{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-left: 5vw;
+        margin-top: 8vw;
+    }
+}
