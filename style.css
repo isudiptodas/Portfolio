@@ -192,6 +192,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 3vw 2vw;
+    overflow: hidden;
 }
 
 .page2 .lang img, .tech img{
