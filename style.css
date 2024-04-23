@@ -230,7 +230,7 @@
 }
 
 .page2 .pr1{
-    height: 80%;
+    height: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -238,7 +238,7 @@
 }
 
 .page2 .project .pr1 video{
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -491,33 +491,35 @@
     }
     
     .page2 .lang, .tech{
-        height: 20vh;
+        height: 10vh;
         width: 98%;
         /* border: 1px solid red; */
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 3vw 4vw;
+        /* border: 1px solid red; */
     }
     
     .page2 .lang img, .tech img{
-        height: 40%;
+        height: 35%;
         margin-top: 3vw;
         border-radius: 10px;
         display: inline-block;
+        /* border: 1px solid red; */
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     }
 
     .page2 .newh2{
-        margin-top: 6vw;
+        margin-top: -2vw;
     }
 
     .page2 .designh2{
-        margin-top: 5vw;
+        margin-top: -2vw;
     }
 
     .page2 .certifications{
-        margin-top: -8vw;
+        margin-top: -4vw;
     }
 
     .page2 .projects{
