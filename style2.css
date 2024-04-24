@@ -185,7 +185,6 @@
         justify-content: flex-start;
         gap: 3vw 2vw;
         overflow-x: auto;
-        border: 1px solid red;
     }
     
     .page2 .lang img, .tech img{
